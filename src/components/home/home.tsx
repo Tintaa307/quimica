@@ -18,7 +18,7 @@ const Home = () => {
             Descubrí cuanto dióxido de carbono producís cada vez que viajas{" "}
           </p>
         </div>
-        <div className="w-full h-max flex items-center justify-center flex-row gap-8">
+        <div className="w-full h-max flex items-center justify-center flex-row gap-12">
           <Form />
           <Results />
         </div>
