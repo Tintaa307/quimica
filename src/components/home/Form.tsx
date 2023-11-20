@@ -11,10 +11,10 @@ const Form = ({ setResults }: FormProps) => {
     const data = Object.fromEntries(formData.entries())
     console.log(data)
 
-    // cuentas
+    // calculate the results
 
     // set the results into the state "setResults"
-    setResults(0)
+    setResults(Math.ceil(0)) // <-- replace 0 with the result
   }
 
   return (
