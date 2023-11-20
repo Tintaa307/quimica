@@ -9,8 +9,8 @@ const Home = () => {
         "special",
       ].join(" ")}
     >
-      <div className="w-full h-full flex items-start justify-start flex-col gap-12">
-        <div className="w-full h-max flex items-start justify-start flex-col gap-6 mt-12">
+      <div className="w-full h-full flex items-start justify-start flex-col gap-8">
+        <div className="w-full h-max flex items-start justify-start flex-col gap-6 mt-8">
           <h1 className="text-white text-5xl font-semibold ml-24">
             Tu calculadora de CO2
           </h1>
