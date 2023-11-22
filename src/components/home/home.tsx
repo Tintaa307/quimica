@@ -4,6 +4,7 @@ import Results from "./Results"
 
 const Home = () => {
   const [results, setResults] = useState<number>(0)
+  const [trees, setTrees] = useState<number>(0)
   return (
     <main
       className={[
@@ -21,8 +22,8 @@ const Home = () => {
           </p>
         </div>
         <div className="w-full h-max flex items-center justify-center flex-row gap-12">
-          <Form setResults={setResults} />
-          <Results results={results} />
+          <Form setResults={setResults} setTrees={setTrees} />
+          <Results results={results} trees={trees}/>
         </div>
       </div>
     </main>

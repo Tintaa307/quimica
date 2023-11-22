@@ -6,7 +6,7 @@ const Nav = () => {
       <nav className="w-full h-full flex items-center justify-center">
         <div className="flex flex-row gap-3">
           <Logo />
-          <h1 className="text-black font-black text-3xl">Rutify</h1>
+          <h1 className="text-black font-black text-3xl">CarbonSense</h1>
         </div>
       </nav>
     </header>
