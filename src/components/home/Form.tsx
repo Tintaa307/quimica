@@ -40,7 +40,7 @@ const Form = ({ setResults, setTrees }: FormProps) => {
       else if((data.salida === 'pinamar' && data.destino === 'bariloche') || (data.salida === 'bariloche' && data.destino === 'pinamar')){
         dist = 1581
       }
-      result = (80.4 * dist) / 60;
+      result = (0.748 * dist) / 60;
     }
     console.log(data);
 
