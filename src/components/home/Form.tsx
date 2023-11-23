@@ -27,7 +27,12 @@ const Form = ({ setResults, setTrees }: FormProps) => {
       else if((data.salida === 'cordoba' && data.destino === 'montevideo') || (data.salida === 'montevideo' && data.destino === 'cordoba')){
         dist = 838
       }
+      if (data.tipo_avion === 'boeing737') {
       result = (6.591 * dist) / 170;
+      }
+      else if(data.tipo_avion === 'a320'){
+        result = (8.932 * dist) / 180;
+      }
     }
     else if(data.transport === 'micro'){
       let dist = 0;
@@ -125,6 +130,19 @@ const Form = ({ setResults, setTrees }: FormProps) => {
             </option>
             <option className="h-12" value="montevideo">
               Montevideo
+            </option>
+          </select>
+          <select
+          className="w-[70%] h-12 bg-[#47602E] text-white outline-none rounded-sm cursor-pointer"
+          name="tipo_avion">
+            <option value="" disabled selected className="w-full h-12 flex items-start justify-start flex-row gap-8">Tipo de avión</option>
+            <option 
+            className="w-full h-12 flex items-start justify-start flex-row gap-8" 
+            value="boeing737">
+              Boeing 737
+            </option>
+            <option className="h-12" value="a320">
+              A320
             </option>
           </select>
         </>
