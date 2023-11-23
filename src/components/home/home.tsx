@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <main
       className={[
-        "w-full bg-[url('/bg-image.png')] bg-no-repeat flex items-center justify-center",
+        "w-full bg-[url('/bg-image.png')] bg-no-repeat bg-contain flex items-center justify-center",
         "special",
       ].join(" ")}
     >
