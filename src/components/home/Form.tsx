@@ -18,14 +18,14 @@ const Form = ({ setResults, setTrees }: FormProps) => {
     }
     else if(data.transport === 'avion'){
       let dist = 0;
-      if((data.salida === 'ezeiza' && data.destino === 'cordoba') || (data.salida === 'cordoba' && data.destino === 'ezeiza')){
-        dist = 647;
+      if((data.salida === 'ezeiza' && data.destino === 'mdp') || (data.salida === 'mdp' && data.destino === 'ezeiza')){
+        dist = 365;
       }
-      else if((data.salida === 'ezeiza' && data.destino === 'montevideo') || (data.salida === 'montevideo' && data.destino === 'ezieza')){
-        dist = 231
+      else if((data.salida === 'ezeiza' && data.destino === 'bariloche') || (data.salida === 'bariloche' && data.destino === 'ezieza')){
+        dist = 1309
       }
-      else if((data.salida === 'cordoba' && data.destino === 'montevideo') || (data.salida === 'montevideo' && data.destino === 'cordoba')){
-        dist = 838
+      else if((data.salida === 'mdp' && data.destino === 'bariloche') || (data.salida === 'bariloche' && data.destino === 'mdp')){
+        dist = 1228
       }
       if (data.tipo_avion === 'boeing737') {
       result = (6.591 * dist) / 170;
@@ -36,14 +36,14 @@ const Form = ({ setResults, setTrees }: FormProps) => {
     }
     else if(data.transport === 'micro'){
       let dist = 0;
-      if((data.salida === 'retiro' && data.destino === 'pinamar') || (data.salida === 'pinamar' && data.destino === 'retiro')){
-        dist = 370;
+      if((data.salida === 'retiro' && data.destino === 'mdp') || (data.salida === 'mdp' && data.destino === 'retiro')){
+        dist = 415;
       }
       else if((data.salida === 'retiro' && data.destino === 'bariloche') || (data.salida === 'bariloche' && data.destino === 'retiro')){
         dist = 1584
       }
-      else if((data.salida === 'pinamar' && data.destino === 'bariloche') || (data.salida === 'bariloche' && data.destino === 'pinamar')){
-        dist = 1581
+      else if((data.salida === 'mdp' && data.destino === 'bariloche') || (data.salida === 'bariloche' && data.destino === 'mdp')){
+        dist = 1434
       }
       result = (0.748 * dist) / 60;
     }
@@ -107,11 +107,11 @@ const Form = ({ setResults, setTrees }: FormProps) => {
               >
               Ezeiza
             </option>
-            <option className="h-12" value="cordoba">
-              Córdoba
+            <option className="h-12" value="mdp">
+              Mar del Plata
             </option>
-            <option className="h-12" value="montevideo">
-              Montevideo
+            <option className="h-12" value="bariloche">
+              Bariloche
             </option>
           </select>
           <select
@@ -125,11 +125,11 @@ const Form = ({ setResults, setTrees }: FormProps) => {
               >
               Ezeiza
             </option>
-            <option className="h-12" value="cordoba">
-              Córdoba
+            <option className="h-12" value="mdp">
+              Mar del Plata
             </option>
-            <option className="h-12" value="montevideo">
-              Montevideo
+            <option className="h-12" value="bariloche">
+              Bariloche
             </option>
           </select>
           <select
@@ -160,8 +160,8 @@ const Form = ({ setResults, setTrees }: FormProps) => {
               >
               Retiro
             </option>
-            <option className="h-12" value="pinamar">
-              Pinamar
+            <option className="h-12" value="mdp">
+              Mar del Plata
             </option>
             <option className="h-12" value="bariloche">
               Bariloche
@@ -178,8 +178,8 @@ const Form = ({ setResults, setTrees }: FormProps) => {
               >
               Retiro
             </option>
-            <option className="h-12" value="pinamar">
-              Pinamar
+            <option className="h-12" value="mdp">
+              Mar del Plata
             </option>
             <option className="h-12" value="bariloche">
               Bariloche
